@@ -1,0 +1,30 @@
+name: Sync repos
+
+on:
+  # push:
+  #   branches:
+  #     - main
+  schedule:
+   - cron: 0 16 * * *
+  workflow_dispatch:
+  repository_dispatch:
+    types: [sync-repos]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Sync mastodon-embed-timeline
+        run: |
+          git clone https://gitlab.com/idotj/mastodon-embed-timeline.git
+          cd mastodon-embed-timeline
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/mastodon-embed-timeline.git
+          git push
+
+      - name: Sync hugo-theme-doit
+        run: |
+          git clone https://github.com/HEIGE-PCloud/DoIt.git
+          cd DoIt
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/hugo-theme-doit.git
+          git push
