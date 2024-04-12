@@ -25,6 +25,6 @@ jobs:
       - name: Sync hugo-theme-blowfish
         run: |
           git clone https://github.com/nunocoracao/blowfish.git
-          cd DoIt
+          cd blowfish
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/blowfish.git
           git push
