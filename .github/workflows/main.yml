@@ -28,3 +28,61 @@ jobs:
           cd blowfish
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/blowfish.git
           git push
+
+      - name: Sync Phanpy Production
+        run: |
+          git clone https://github.com/cheeaun/phanpy
+          cd phanpy
+          git checkout production
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/phanpy.git
+          git push
+
+      - name: Sync MyIP
+        run: |
+          git clone https://github.com/jason5ng32/MyIP
+          cd MyIP
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/MyIP.git
+          git push
+
+      - name: Sync haitang
+        run: |
+          git clone https://github.com/javayhu/haitang
+          cd haitang
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/haitang.git
+          git push
+
+      - name: Sync Sink
+        run: |
+          git clone https://github.com/ccbikai/Sink
+          cd Sink
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/Sink.git
+          git push
+
+      - name: Sync RSSHub legacy
+        run: |
+          git clone https://github.com/DIYgod/RSSHub
+          cd RSSHub
+          git checkout legacy
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/RSSHub.git
+          git push
+
+      - name: Sync alist-tvbox
+        run: |
+          git clone https://github.com/power721/alist-tvbox
+          cd alist-tvbox
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/alist-tvbox.git
+          git push
+
+      - name: Sync pic-smaller
+        run: |
+          git clone https://github.com/joye61/pic-smaller
+          cd pic-smaller
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/pic-smaller.git
+          git push
+
+      - name: Sync simple-one-api
+        run: |
+          git clone https://github.com/fruitbars/simple-one-api
+          cd simple-one-api
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/simple-one-api.git
+          git push
