@@ -31,9 +31,8 @@ jobs:
 
       - name: Sync Phanpy Production
         run: |
-          git clone https://github.com/cheeaun/phanpy
+          git clone https://github.com/cheeaun/phanpy -b production
           cd phanpy
-          git checkout production
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/phanpy.git
           git push
 
@@ -60,9 +59,8 @@ jobs:
 
       - name: Sync RSSHub legacy
         run: |
-          git clone https://github.com/DIYgod/RSSHub
+          git clone https://github.com/DIYgod/RSSHub -b legacy
           cd RSSHub
-          git checkout legacy
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/RSSHub.git
           git push
 
