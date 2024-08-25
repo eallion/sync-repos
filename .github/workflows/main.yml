@@ -36,13 +36,6 @@ jobs:
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/phanpy.git
           git push
 
-      - name: Sync MyIP
-        run: |
-          git clone https://github.com/jason5ng32/MyIP
-          cd MyIP
-          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/MyIP.git
-          git push
-
       - name: Sync haitang
         run: |
           git clone https://github.com/javayhu/haitang
@@ -76,13 +69,6 @@ jobs:
           git clone https://github.com/joye61/pic-smaller
           cd pic-smaller
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/pic-smaller.git
-          git push
-
-      - name: Sync simple-one-api
-        run: |
-          git clone https://github.com/fruitbars/simple-one-api
-          cd simple-one-api
-          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/simple-one-api.git
           git push
 
       - name: Sync DailyHotApi-Vercel
