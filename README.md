@@ -20,10 +20,6 @@
   - https://github.com/cheeaun/phanpy
   - https://github.com/eallion/phanpy.git
 
-- MyIP
-  - https://github.com/jason5ng32/MyIP
-  - https://github.com/eallion/MyIP.git
-
 - haitang
   - https://github.com/javayhu/haitang
   - https://github.com/eallion/haitang.git
@@ -43,7 +39,3 @@
 - pic-smaller
   - https://github.com/joye61/pic-smaller
   - https://github.com/eallion/pic-smaller.git
-
-- simple-one-api
-  - https://github.com/fruitbars/simple-one-api
-  - https://github.com/eallion/simple-one-api.git
