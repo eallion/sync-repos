@@ -50,13 +50,6 @@ jobs:
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/Sink.git
           git push
 
-      - name: Sync RSSHub legacy
-        run: |
-          git clone https://github.com/DIYgod/RSSHub -b legacy
-          cd RSSHub
-          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/RSSHub.git
-          git push
-
       - name: Sync alist-tvbox
         run: |
           git clone https://github.com/power721/alist-tvbox
@@ -90,4 +83,11 @@ jobs:
           git clone https://github.com/ccbikai/BroadcastChannel
           cd BroadcastChannel
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/BroadcastChannel.git
+          git push
+
+      - name: Sync medicine
+        run: |
+          git clone https://github.com/lvwzhen/medicine
+          cd BroadcastChannel
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/medicine.git
           git push
