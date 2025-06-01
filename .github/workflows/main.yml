@@ -36,13 +36,6 @@ jobs:
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/haitang.git
           git push
 
-      - name: Sync Sink
-        run: |
-          git clone https://github.com/ccbikai/Sink
-          cd Sink
-          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/Sink.git
-          git push
-
       - name: Sync alist-tvbox
         run: |
           git clone https://github.com/power721/alist-tvbox

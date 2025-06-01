@@ -24,10 +24,6 @@
   - https://github.com/javayhu/haitang
   - https://github.com/eallion/haitang
 
-- Sink
-  - https://github.com/ccbikai/Sink
-  - https://github.com/eallion/Sink
-
 - alist-tvbox
   - https://github.com/power721/alist-tvbox
   - https://github.com/eallion/alist-tvbox
