@@ -36,13 +36,6 @@ jobs:
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/haitang.git
           git push
 
-      - name: Sync alist-tvbox
-        run: |
-          git clone https://github.com/power721/alist-tvbox
-          cd alist-tvbox
-          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/alist-tvbox.git
-          git push
-
       - name: Sync pic-smaller
         run: |
           git clone https://github.com/joye61/pic-smaller
@@ -74,6 +67,20 @@ jobs:
       - name: Sync medicine
         run: |
           git clone https://github.com/lvwzhen/medicine
-          cd BroadcastChannel
+          cd medicine
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/medicine.git
+          git push
+          
+      - name: Sync MoonTV
+        run: |
+          git clone https://github.com/senshinya/MoonTV
+          cd MoonTV
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/MoonTV.git
+          git push
+          
+      - name: Sync LibreTV
+        run: |
+          git clone https://github.com/LibreSpark/LibreTV
+          cd LibreTV
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/LibreTV.git
           git push
