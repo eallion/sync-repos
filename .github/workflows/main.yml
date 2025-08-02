@@ -28,6 +28,13 @@ jobs:
           cd phanpy
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/phanpy.git
           git push
+          
+      - name: Sync Sink
+        run: |
+          git clone https://github.com/ccbikai/Sink
+          cd Sink
+          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/Sink.git
+          git push
 
       - name: Sync haitang
         run: |
