@@ -43,20 +43,6 @@ jobs:
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/pic-smaller.git
           git push
 
-      - name: Sync DailyHotApi-Vercel
-        run: |
-          git clone https://github.com/imsyy/DailyHotApi-Vercel
-          cd DailyHotApi-Vercel
-          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/DailyHotApi-Vercel.git
-          git push
-
-      - name: Sync DailyHot
-        run: |
-          git clone https://github.com/imsyy/DailyHot
-          cd DailyHot
-          git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/DailyHot.git
-          git push
-
       - name: Sync BroadcastChannel
         run: |
           git clone https://github.com/ccbikai/BroadcastChannel
