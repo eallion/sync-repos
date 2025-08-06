@@ -52,7 +52,7 @@ jobs:
           
       - name: Sync MoonTV
         run: |
-          git clone https://github.com/senshinya/MoonTV
+          git clone https://github.com/LunaTechLab/MoonTV
           cd MoonTV
           git remote set-url --add --push origin https://id:${{ secrets.SYNC_REPOS_TOKEN }}@github.com/eallion/MoonTV.git
           git push
